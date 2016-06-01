@@ -23,16 +23,15 @@ namespace TheWorld
             app.Run(async (context) =>
             {
                 var html = @"
-                            <!DOCTYPE html>
-                            <html>
-                            <head>
-                                <meta charset='utf-8' />
-                                <title>The Hello World</title>
-                            </head>
-                            <body>
-                                The Hello World
-                            </body>
-                            </html>                 
+                                <!DOCTYPE html>
+                                <html>
+                                <head>
+                                    <title>The World</title>
+                                </head>
+                                <body>
+                                    <h2>The World as I know it!</h2>
+                                </body>
+                                </html>
                             ";
                 await context.Response.WriteAsync(html);
             });
